@@ -1,4 +1,4 @@
-//Had some trouble getting forbidden errors with the sendFile structure if not using path
+//Had some trouble getting forbidden errors with the sendFile structure if not using path module
 const path = require("path");
 
 module.exports = function (app) {
