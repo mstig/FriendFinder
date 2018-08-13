@@ -23,14 +23,15 @@
         <hr>
         <br>
         <h3>About You:</h3>
-        <h5>Name (Required)</h5>
+        <h4>Name (Required)</h4>
         <input type="text" id="name" class="form-control" required>
-        <h5>Photo of You (Required)</h5>
+        <h4>Photo of You (Required)</h4>
         <input type="text" id="photo" class="form-control" required>
         <hr>
         <br>
 
-        <h5>Question 1</h5>
+        <h4>Question 1</h4>
+        <p>You love spending time with large groups of people.</p>
         <select class="chosen-select" id="q1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -41,7 +42,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 2</h5>
+        <h4>Question 2</h4>
+        <p>You consider yourself to be creative.</p>
         <select class="chosen-select" id="q2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -52,7 +54,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 3</h5>
+        <h4>Question 3</h4>
+        <p>You enjoy being physically active.</p>
         <select class="chosen-select" id="q3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -63,7 +66,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 4</h5>
+        <h4>Question 4</h4>
+        <p>You would rather have a small group of very close friends than a large group of acquaintances.</p>
         <select class="chosen-select" id="q4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -74,7 +78,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 5</h5>
+        <h4>Question 5</h4>
+        <p>You like to travel to new places on a whim.</p>
         <select class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -85,7 +90,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 6</h5>
+        <h4>Question 6</h4>
+        <p>Having a successful, stable career is the key to happiness.</p>
         <select class="chosen-select" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -96,7 +102,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 7</h5>
+        <h4>Question 7</h4>
+        <p>You are always confident in front of groups of new people.</p>
         <select class="chosen-select" id="q7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -107,7 +114,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 8</h5>
+        <h4>Question 8</h4>
+        <p>You would rather watch a light-hearted comedy movie than a serious drama.</p>
         <select class="chosen-select" id="q8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -118,7 +126,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 9</h5>
+        <h4>Question 9</h4>
+        <p>You think it is more important to consider someone's emotions than the facts of a situation.</p>
         <select class="chosen-select" id="q9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -129,7 +138,8 @@
         </select>
         <br>
         <br>
-        <h5>Question 10</h5>
+        <h4>Question 10</h4>
+        <p>You prefer dogs more than cats.</p>
         <select class="chosen-select" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -152,36 +162,16 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
                     <h2 class="modal-title">
-                        <strong>Best Match</strong>
+                        <strong>Your New Best Friend:</strong>
                     </h2>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-center">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="http://via.placeholder.com/250x250" alt="">
+                    <img id="match-img" src="http://via.placeholder.com/250x250" alt="Your new match" style="width:65%">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="results-modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title">
-                        <strong>Your New Best Friend:</strong>
-                    </h2>
-                </div>
-                <div class="modal-body">
-                    <h2 id="match-name"></h2>
-                    <img id="match-img">
-                </div>           
             </div>
 
         </div>
@@ -262,7 +252,7 @@
 
                 });
             } else {
-                alert("Please fill out all fields before submitting!");
+                alert("Please complete all forms before submitting!");
             }
         });
     </script>
